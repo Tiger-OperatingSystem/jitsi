@@ -27,7 +27,7 @@ chmod +x "${working_dir}/usr/lib/tiger-os/jitsi-launcher.sh"
  echo "Priority: optional"
  echo "Version: $(date +%y.%m.%d%H%M%S)"
  echo "Architecture: all"
- echo "Maintainer: Natanael Barbosa Santos"
+ echo "Maintainer: Daigo Asuka"
  echo "Depends: "
  echo "Description: Solução de videoconferência totalmente criptografada e 100% de código aberto"
  echo
