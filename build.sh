@@ -13,12 +13,12 @@ HERE="$(dirname "$(readlink -f "${0}")")"
 working_dir=$(mktemp -d)
 
 mkdir -p "${working_dir}/usr/lib/tiger-os/"
-mkdir -p "${working_dir}/usr/share/application/"
+mkdir -p "${working_dir}/usr/share/applications/"
 mkdir -p "${working_dir}/DEBIAN/"
 
 cp -v "${HERE}/jitsi-launcher.sh"      "${working_dir}/usr/lib/tiger-os/"
 cp -v "${HERE}/jitsi.png"              "${working_dir}/usr/lib/tiger-os/"
-cp -v "${HERE}/jitsi-launcher.desktop" "${working_dir}/usr/share/application/"
+cp -v "${HERE}/jitsi-launcher.desktop" "${working_dir}/usr/share/applications/"
 
 chmod +x "${working_dir}/usr/lib/tiger-os/jitsi-launcher.sh"
 
