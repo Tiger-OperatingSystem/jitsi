@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export GTK_THEME="A"
+export GTK_THEME="Adwaita:dark"
 
 jitsi_url="https://meet.jit.si/$(echo ${RANDOM} ${RANDOM} ${RANDOM} | sha1sum | cut -c 1-21)"
 
