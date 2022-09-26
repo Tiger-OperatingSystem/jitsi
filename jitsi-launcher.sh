@@ -1,6 +1,7 @@
 #!/bin/bash
 
 export GTK_THEME="Adwaita:dark"
+export HERE="$(dirname "$(readlink -f "${0}")")"
 
 jitsi_url="https://meet.jit.si/$(echo ${RANDOM} ${RANDOM} ${RANDOM} | sha1sum | cut -c 1-21)"
 
