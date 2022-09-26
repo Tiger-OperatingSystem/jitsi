@@ -6,7 +6,7 @@ jitsi_url="https://meet.jit.si/$(echo ${RANDOM} ${RANDOM} ${RANDOM} | sha1sum | 
 
 function showLink() {
   echo -e "\nJunte-se a nós na reunião no Jitsi, para acessar basta clicar no link a seguir, não é necessário instalar nenhum aplicativo, tudo acontecerá pelo nevegador\n\n${jitsi_url}" | yad --show-uri --wrap --margins=32 --text-info --center --borders=32 --width=640 --height=340 --text="<big><b>Quase lá para começar sua reunião</b></big>\nAgora é só copiar a mensagem e mandar para as pessoas e esperar, quando elas abrirem\n o link irão entrar na reunião através do navegador\n" --button="Abrir link no navegador" --fixed --class=jitsi-launcher --name=jitsi-launcher --title="Jetsi Meet - Gerador de links" --window-icon=Jitsi && {
-    xdg-open "${jitsi_url}"
+    ice "${jitsi_url}"
     showLink
   }
 }
