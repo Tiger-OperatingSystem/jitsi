@@ -27,7 +27,7 @@ function openLink() {
   [ "${link}" = "" ] && {
     openLink "\n\nErro: O link passado está vazio"
   } || {
-    xdg-open "https://meet.jit.si/${link}"
+    ice "https://meet.jit.si/${link}"
   }
 }
 
