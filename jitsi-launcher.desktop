@@ -5,6 +5,6 @@ Name=Jitsi Meet
 X-KDE-StartupNotify=true
 Icon=/usr/lib/tiger-os/jitsi.png
 Terminal=false
-Categories=Education;Network;Utility;
+Categories=Internet;Network;
 
 
