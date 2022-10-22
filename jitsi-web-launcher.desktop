@@ -2,7 +2,6 @@
 Type=Application
 Exec=/usr/lib/tiger-os/jitsi-web-launcher.sh
 Name=Jitsi Meet
-X-KDE-StartupNotify=true
 Icon=/usr/lib/tiger-os/jitsi.png
 Terminal=false
 Categories=Internet;Network;
