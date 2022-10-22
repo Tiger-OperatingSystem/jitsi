@@ -17,10 +17,12 @@ mkdir -p "${working_dir}/usr/share/applications/"
 mkdir -p "${working_dir}/DEBIAN/"
 
 cp -v "${HERE}/jitsi-launcher.sh"      "${working_dir}/usr/lib/tiger-os/"
+cp -v "${HERE}/jitsi-web-launcher.sh"  "${working_dir}/usr/lib/tiger-os/"
 cp -v "${HERE}/jitsi.png"              "${working_dir}/usr/lib/tiger-os/"
-cp -v "${HERE}/jitsi-launcher.desktop" "${working_dir}/usr/share/applications/"
+cp -v "${HERE}/jitsi-web-launcher.desktop" "${working_dir}/usr/share/applications/"
 
 chmod +x "${working_dir}/usr/lib/tiger-os/jitsi-launcher.sh"
+chmod +x "${working_dir}/usr/lib/tiger-os/jitsi-web-launcher.sh"
 
 (
  echo "Package: jitsi"
