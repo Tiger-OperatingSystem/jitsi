@@ -2,7 +2,7 @@
 Type=Application
 Exec=/usr/lib/tiger-os/jitsi-web-launcher.sh
 Name=Jitsi Meet
-Icon=/usr/lib/tiger-os/jitsi.png
+Icon=/usr/lib/tiger-os/jitsi.svg
 Terminal=false
 Categories=Internet;Network;
 
