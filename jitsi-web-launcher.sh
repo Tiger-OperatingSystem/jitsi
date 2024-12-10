@@ -6,7 +6,7 @@ export HERE="$(dirname "$(readlink -f "${0}")")"
 jitsi_url="https://meet.jit.si/$(echo ${RANDOM} ${RANDOM} ${RANDOM} | sha1sum | cut -c 1-21)"
 
 function showLink() {
-  echo -e "\nJunte-se a nós na reunião no Jitsi, para acessar basta clicar no link a seguir, não é necessário instalar nenhum aplicativo, tudo acontecerá pelo nevegador\n\n${jitsi_url}" | yad --wrap --margins=32 --text-info --center --borders=32 --width=640 --height=480 --text="<big><b>Quase lá para começar sua reunião</b></big>\nAgora é só copiar a mensagem e mandar para as pessoas e esperar, quando elas abrirem\no link irão entrar na reunião através do navegador\n" --button=gtk-close:1 --button="Começar reunião" --fixed --class=jitsi-launcher --name=jitsi-launcher --title="Jetsi Meet - Gerador de links" --window-icon="${HERE}/jitsi.png" && {
+  echo -e "\nJunte-se a nós na reunião no Jitsi, para acessar basta clicar no link a seguir, não é necessário instalar nenhum aplicativo, tudo acontecerá pelo nevegador\n\n${jitsi_url}" | yad --wrap --margins=32 --text-info --center --borders=32 --width=640 --height=480 --text="<big><b>Quase lá para começar sua reunião</b></big>\nAgora é só copiar a mensagem e mandar para as pessoas e esperar, quando elas abrirem\no link irão entrar na reunião através do navegador\n" --button=gtk-close:1 --button="Começar reunião":0 --fixed --class=jitsi-launcher --name=jitsi-launcher --title="Jetsi Meet - Gerador de links" --window-icon="${HERE}/jitsi.png" && {
     webapp-player "${jitsi_url}" "Jitsi Meet" "/usr/lib/tiger-os/jitsi.png"
     showLink
   }
