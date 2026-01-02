@@ -20,8 +20,8 @@ def url_jitsi():
     return url_final
 
 def main():
-    # Teste para gerar a url da reunião
-    print(url_jitsi())
+    # Teste para abrir o browser
+    webbrowser.open_new(url_jitsi())
     
 if __name__ == '__main__':
     main()
