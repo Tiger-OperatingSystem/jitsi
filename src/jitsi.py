@@ -1,4 +1,5 @@
 from random_word import RandomWords
+import webbrowser
 
 def gerar_nome_reuniao():
     global palavras_juntas
@@ -13,9 +14,14 @@ def gerar_nome_reuniao():
     palavras_juntas = "".join(lista_palavras)
     return palavras_juntas
 
+def url_jitsi():
+    url_base = "https://meet.jit.si/"
+    url_final = url_base + gerar_nome_reuniao()
+    return url_final
+
 def main():
-    # Teste para gerar o nome da reunião
-    print(gerar_nome_reuniao())
+    # Teste para gerar a url da reunião
+    print(url_jitsi())
     
 if __name__ == '__main__':
     main()
